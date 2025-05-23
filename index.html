@@ -9,33 +9,82 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <img src="logo.png" alt="Inspect Shops Logo" class="logo" />
+    <div class="container">
+      <img src="logo.png" alt="Inspect Shops Logo" class="logo" />
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
+  <section class="hero" id="home">
+    <div class="hero-content">
       <h1>Professional Vehicle Lift Inspections</h1>
-      <p>Stay compliant. Stay safe. Mobile inspections across California.</p>
+      <p>Mobile inspections across California. Stay compliant. Stay safe.</p>
       <a href="#contact" class="button">Request an Inspection</a>
+    </div>
+  </section>
+
+  <!-- Banner Image -->
+  <section class="banner-image">
+    <img src="https://images.unsplash.com/photo-1583912268183-682db5f5b6bc" alt="Auto Shop Tools">
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why" class="why">
+    <div class="container two-column">
+      <div>
+        <h2>Why Choose Inspect Shops?</h2>
+        <ul>
+          <li>Certified and experienced lift inspectors</li>
+          <li>Mobile service – we come to your shop</li>
+          <li>Fast turnaround and compliance-ready reports</li>
+          <li>Serving commercial and residential garages</li>
+        </ul>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1622462914703-bd6dcb907d4f" alt="Technician in garage" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1607532941433-304659f4ed2f" alt="Residential Garage" />
+          <h3>Residential Lift Inspections</h3>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1582395764184-4cda5c0e6ee5" alt="Commercial Lift" />
+          <h3>Commercial Lift Inspections</h3>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1615391262200-9e84c781df2d" alt="Tools and Equipment" />
+          <h3>Annual Compliance Reports</h3>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:inspectshops@gmail.com">inspectshops@gmail.com</a></p>
-    <form action="https://formspree.io/f/xpwdeonq" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="button">Send Message</button>
-    </form>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:inspectshops@gmail.com">inspectshops@gmail.com</a></p>
+      <form action="https://formspree.io/f/xpwdeonq" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
